@@ -53,13 +53,13 @@ alias rb='ruby'
 # Bundler
 if (( $+commands[bundle] )); then
   alias rbb='bundle'
-  alias rbbe='bundle exec'
-  alias rbbi='bundle install --path vendor/bundle'
-  alias rbbl='bundle list'
-  alias rbbo='bundle open'
-  alias rbbp='bundle package'
-  alias rbbu='bundle update'
-  alias rbbI='rbbi \
+  alias be='bundle exec'
+  alias bi='bundle install'
+  alias bl='bundle list'
+  alias bo='bundle open'
+  alias bp='bundle package'
+  alias bu='bundle update'
+  alias bI='rbbi \
     && bundle package \
     && print .bundle       >>! .gitignore \
     && print vendor/assets >>! .gitignore \

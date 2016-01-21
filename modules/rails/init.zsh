@@ -20,7 +20,7 @@ fi
 #
 
 alias ror='bundle exec rails'
-alias rorc='bundle exec rails console'
+alias rc='bundle exec rails console'
 alias rordc='bundle exec rails dbconsole'
 alias rordm='bundle exec rake db:migrate'
 alias rordM='bundle exec rake db:migrate db:test:clone'

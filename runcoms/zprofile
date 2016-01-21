@@ -5,6 +5,14 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
+
 #
 # Browser
 #
@@ -18,7 +26,7 @@ fi
 #
 
 export EDITOR='nano'
-export VISUAL='nano'
+export VISUAL='vi'
 export PAGER='less'
 
 #
